@@ -37,7 +37,7 @@ export default class BigPlayButton extends Component {
           `video-react-big-play-button-${position}`,
           this.props.className,
           {
-            'big-play-button-hide': player.hasStarted || !player.currentSrc
+            'big-play-button-hide': player.hasStarted || !player.currentSrc || player.paused
           }
         )}
         type="button"
